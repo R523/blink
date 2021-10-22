@@ -8,8 +8,8 @@ import (
 
 	"github.com/pterm/pterm"
 	"periph.io/x/conn/v3/gpio"
-	"periph.io/x/conn/v3/gpio/gpioreg"
 	"periph.io/x/host/v3"
+	"periph.io/x/host/v3/rpi"
 )
 
 const Interval = 500 * time.Millisecond
@@ -36,8 +36,7 @@ func main() {
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 
 	for l := gpio.Low; ; l = !l {
-		// lookup a pin by its location on the board:
-		if err := gpioreg.ByName("26").Out(l); err != nil {
+		if err := rpi.P1_37.Out(l); err != nil {
 			pterm.Error.Printf("pinout %s\n", err)
 
 			return
