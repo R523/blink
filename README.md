@@ -1,7 +1,7 @@
 # blink
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/R523/blink/lint?label=lint&logo=github&style=flat-square)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/R523/blink/lint.yaml)
 
 ## Introduction
 
-LED blinking with Go on RPi with [Periph](https://periph.io/).
+LED blinking with Go on RPi using [Periph](https://periph.io/).
