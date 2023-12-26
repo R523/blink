@@ -1,6 +1,6 @@
 # blink
 
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/R523/blink/lint.yaml)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/R523/blink/lint.yaml?style=for-the-badge&logo=github)
 
 ## Introduction
 
